@@ -1,11 +1,12 @@
 <h1>Nation Info</h1>
+<h2>Number of Characters <%= @characters.count %></h2>
 <% @characters.each do |character| %>
-  <h4>Name: <%= character[:name] %></h4>
-  <h4>Allies: <%= character[:allies].join(", ") %></h4>
+  <h4>Name: <%= character.name %></h4>
+  <h4>Allies: <%= character.allies %></h4>
 
-  <h4> Enemies: <%= character[:enemies].join(", ") %></h4>
+  <h4> Enemies: <%= character.enemies %></h4>
 
-  <h4>Affiliation: <%= character[:affiliation] %></h4></br>
+  <h4>Affiliation: <%= character.affiliation%></h4></br>
 
-  <img src="<%= character[:photoUrl]%>", alt="photo">
+  <img src="<%= character.photo%>", alt="photo">
 <% end %>
