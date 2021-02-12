@@ -1,4 +1,7 @@
 <h1>Nation Info</h1>
 <% @characters.each do |character| %>
-  <h4>Name: <%= character[:name] %></h4></br>>
+  <h4>Name: <%= character[:name] %></h4>
+  <h4>Allies: <%= character[:allies] %></h4>
+  <h4> Enemies: <%= character[:enemies] %></h4>
+  <h4>Affiliation: <%= character[:affiliation] %></h4></br>
 <% end %>
